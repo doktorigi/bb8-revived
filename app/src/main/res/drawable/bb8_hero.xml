@@ -1,0 +1,43 @@
+<!-- Original BB-8-style illustration drawn from basic shapes (no studio artwork). -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="132dp" android:height="146dp"
+    android:viewportWidth="200" android:viewportHeight="222">
+    <!-- floor shadow -->
+    <path android:fillColor="#40000000" android:pathData="M44,212a56,7 0 1,0 112,0a56,7 0 1,0 -112,0z" />
+    <!-- antennas -->
+    <path android:strokeColor="#9EA3A8" android:strokeWidth="2.5" android:strokeLineCap="round" android:pathData="M90,40V16" />
+    <path android:strokeColor="#9EA3A8" android:strokeWidth="1.8" android:strokeLineCap="round" android:pathData="M97,40V28" />
+    <!-- body -->
+    <group>
+        <clip-path android:pathData="M36,142a64,64 0 1,0 128,0a64,64 0 1,0 -128,0z" />
+        <path android:fillColor="#F4F4F2" android:pathData="M36,142a64,64 0 1,0 128,0a64,64 0 1,0 -128,0z" />
+        <!-- shade on the lower right -->
+        <path android:fillColor="#E1E2DF" android:pathData="M60,142a64,64 0 1,0 128,0a64,64 0 1,0 -128,0z" />
+        <path android:fillColor="#F4F4F2" android:pathData="M30,136a64,64 0 1,0 128,0a64,64 0 1,0 -128,0z" />
+        <!-- centre panel -->
+        <path android:strokeColor="#F26522" android:strokeWidth="9" android:pathData="M74,146a26,26 0 1,0 52,0a26,26 0 1,0 -52,0z" />
+        <path android:fillColor="#B9BDC4" android:pathData="M86,146a14,14 0 1,0 28,0a14,14 0 1,0 -28,0z" />
+        <path android:fillColor="#7E848D" android:pathData="M95,146a5,5 0 1,0 10,0a5,5 0 1,0 -10,0z" />
+        <!-- side panels, cut off by the body edge -->
+        <path android:strokeColor="#F26522" android:strokeWidth="8" android:pathData="M18,118a22,22 0 1,0 44,0a22,22 0 1,0 -44,0z" />
+        <path android:fillColor="#B9BDC4" android:pathData="M30,118a10,10 0 1,0 20,0a10,10 0 1,0 -20,0z" />
+        <path android:strokeColor="#F26522" android:strokeWidth="8" android:pathData="M140,124a24,24 0 1,0 48,0a24,24 0 1,0 -48,0z" />
+        <path android:strokeColor="#F26522" android:strokeWidth="8" android:pathData="M76,206a24,24 0 1,0 48,0a24,24 0 1,0 -48,0z" />
+        <!-- panel bolts -->
+        <path android:fillColor="#9EA3A8" android:pathData="M70,104a2.5,2.5 0 1,0 5,0a2.5,2.5 0 1,0 -5,0zM125,104a2.5,2.5 0 1,0 5,0a2.5,2.5 0 1,0 -5,0zM70,188a2.5,2.5 0 1,0 5,0a2.5,2.5 0 1,0 -5,0z" />
+    </group>
+    <!-- head -->
+    <group>
+        <clip-path android:pathData="M56,80a44,42 0 0,1 88,0z" />
+        <path android:fillColor="#F4F4F2" android:pathData="M56,80a44,42 0 0,1 88,0z" />
+        <path android:fillColor="#9EA3A8" android:pathData="M50,47h100v4h-100z" />
+        <path android:fillColor="#F26522" android:pathData="M50,64h100v6h-100z" />
+        <path android:fillColor="#9EA3A8" android:pathData="M50,72h100v2h-100z" />
+    </group>
+    <path android:fillColor="#8E949C" android:pathData="M54,80h92v5a4,4 0 0,1 -4,4h-84a4,4 0 0,1 -4,-4z" />
+    <!-- main eye with blue lens glint, small eye with red light -->
+    <path android:fillColor="#15171A" android:pathData="M88,56a11,11 0 1,0 22,0a11,11 0 1,0 -22,0z" />
+    <path android:fillColor="#4FC3F7" android:pathData="M93,53a3.5,3.5 0 1,0 7,0a3.5,3.5 0 1,0 -7,0z" />
+    <path android:fillColor="#15171A" android:pathData="M115,62a4.5,4.5 0 1,0 9,0a4.5,4.5 0 1,0 -9,0z" />
+    <path android:fillColor="#E5484D" android:pathData="M118,61a1.5,1.5 0 1,0 3,0a1.5,1.5 0 1,0 -3,0z" />
+</vector>
