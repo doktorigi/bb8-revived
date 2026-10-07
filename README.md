@@ -23,6 +23,14 @@ The official app is gone from the stores and can't run on 64-bit-only phones lik
 Download `bb8-revived.apk` from [Releases](../../releases) and open it on your phone (allow "install unknown apps").
 You need Android 13 or newer with Bluetooth LE. Close Sphero Edu before connecting, because BB-8 only accepts one connection.
 
+Release APKs are signed with this certificate (SHA-256). If a download doesn't match, don't install it:
+
+```
+B2:09:8A:27:01:E4:34:C0:03:32:82:9C:1E:8D:E0:09:A9:E7:52:4B:0F:AC:7B:9B:8A:1C:67:22:65:0D:B6:AF
+```
+
+Check it with `apksigner verify --print-certs bb8-revived.apk`.
+
 ## Build
 
 ```sh
@@ -31,6 +39,8 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
 The app is plain Kotlin on the Android framework, with no third-party libraries.
+
+`assembleRelease` signs with the key described in `~/.android-keys/bb8-revived.properties` (`storeFile`, `storePassword`, `keyAlias`, `keyPassword`) if that file exists. Otherwise it builds an unsigned release APK.
 
 ## How it talks to BB-8
 
